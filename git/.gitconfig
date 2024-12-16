@@ -1,12 +1,10 @@
 [user]
 	name = TomRaaff
 	email = tomraaff@protonmail.com
-[includeIf "gitdir:~/Workspace/PoR/"]
-    path = ~/Workspace/PoR/.gitconfig
 [includeIf "gitdir:~/Workspace/Divotion/"]
     path = ~/Workspace/Divotion/.gitconfig
-[includeIf "gitdir:~/Workspace/dsm/"]
-    path = ~/Workspace/dsm/.gitconfig
+[includeIf "gitdir:~/WorkspaceDSM/"]
+    path = ~/WorkspaceDSM/.gitconfig
 [core]
 	autocrlf = input
 [alias]
