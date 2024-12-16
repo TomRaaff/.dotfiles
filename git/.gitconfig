@@ -1,5 +1,5 @@
 [user]
-	name = TomRaaff
+	name = Tom Raaff
 	email = tomraaff@protonmail.com
 [includeIf "gitdir:~/Workspace/Divotion/"]
     path = ~/Workspace/Divotion/.gitconfig
