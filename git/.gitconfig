@@ -1,0 +1,13 @@
+[user]
+	name = TomRaaff
+	email = tomraaff@protonmail.com
+[includeIf "gitdir:~/Workspace/PoR/"]
+    path = ~/Workspace/PoR/.gitconfig
+[includeIf "gitdir:~/Workspace/Divotion/"]
+    path = ~/Workspace/Divotion/.gitconfig
+[includeIf "gitdir:~/Workspace/dsm/"]
+    path = ~/Workspace/dsm/.gitconfig
+[core]
+	autocrlf = input
+[alias]
+  mergetool = "!nvim -c DiffviewOpen"
