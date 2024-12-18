@@ -3,6 +3,13 @@
 created after this example: https://www.youtube.com/watch?v=w7i4amO_zaE
 updated lsp.lua after this example: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/configuration-templates.md#primes-config
 
+## Dependencies
+To be installed with brew:
+- gcc
+- make
+
+use `:checkhealth {plugin}` for more info on dependencies
+
 ## Steps
 Start by installing neovim. Make sure the version is 0.9 or higher.
 
