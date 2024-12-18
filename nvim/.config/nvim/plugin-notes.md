@@ -17,6 +17,8 @@
 ## Plugins
 
 ### Search: Telescope
+- open file in v-split: <C-v>
+
 see `after/plugin/telescope.lua`
 
 ### File Explorer: Neotree

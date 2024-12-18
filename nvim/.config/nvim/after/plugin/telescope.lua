@@ -7,8 +7,20 @@ require('telescope').setup{
             prompt_position = 'top',
         },
         sorting_strategy = 'ascending',
+    },
+    extensions = {
+        fzf = {
+            fuzzy = true,                    -- false will only do exact matching
+            override_generic_sorter = true,  -- override the generic sorter
+            override_file_sorter = true,     -- override the file sorter
+            case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
+            -- the default case_mode is "smart_case"
+        }
     }
 }
+-- To get fzf loaded and working with telescope, you need to call
+-- load_extension, somewhere after setup function:
+require('telescope').load_extension('fzf')
 
 local builtin = require('telescope.builtin')
 
@@ -27,7 +39,7 @@ vim.keymap.set('n', '<leader>sgc', builtin.git_commits, { desc = '[S]earch [G]it
 vim.keymap.set('n', '<leader>sgb', builtin.git_branches, { desc = '[S]earch [G]it [B]ranches' })
 
 vim.keymap.set('n', '<leader>ss', builtin.builtin, { desc = '[S]earch [S]elect Telescope' })
-vim.keymap.set('n', '<leader>sc', builtin.grep_string, { desc = '[S]earch [C]urrent word' })
+vim.keymap.set('n', '<leader>sc', builtin.current_buffer_fuzzy_find, { desc = '[S]earch in [C]urrent file' })
 vim.keymap.set('n', '<leader>se', builtin.oldfiles, { desc = '[S]earch r[E]cent Files' })
 vim.keymap.set('n', '<leader>sq', builtin.quickfix, { desc = '[S]earch [Q]uickfix list' })
 vim.keymap.set('n', '<leader>so', builtin.vim_options, { desc = '[S]earch vim [O]options' })

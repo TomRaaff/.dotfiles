@@ -22,19 +22,20 @@ return require('packer').startup(function(use)
 
   -- Fuzzy finder
   use {
-	  'nvim-telescope/telescope.nvim', tag = '0.1.5',
+	  'nvim-telescope/telescope.nvim', tag = '0.1.8',
 	  requires = {
           {'nvim-lua/plenary.nvim'} ,
           {'burntsushi/ripgrep'},
       }
   }
+  use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
   -- undo
   use('mbbill/undotree')
 
   -- git
   use('tpope/vim-fugitive')
-  use{'sindrets/diffview.nvim'}
+  use('sindrets/diffview.nvim')
 
   -- LSP
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
