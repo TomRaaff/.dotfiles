@@ -156,6 +156,11 @@ _G.packer_plugins = {
     path = "/Users/tomraaff/.local/share/nvim/site/pack/packer/start/neoscroll.nvim",
     url = "https://github.com/karb94/neoscroll.nvim"
   },
+  ["no-neck-pain.nvim"] = {
+    loaded = true,
+    path = "/Users/tomraaff/.local/share/nvim/site/pack/packer/start/no-neck-pain.nvim",
+    url = "https://github.com/shortcuts/no-neck-pain.nvim"
+  },
   ["nui.nvim"] = {
     loaded = true,
     path = "/Users/tomraaff/.local/share/nvim/site/pack/packer/start/nui.nvim",
@@ -167,7 +172,7 @@ _G.packer_plugins = {
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-cursorline"] = {
-    config = { "\27LJ\2\n’\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0005\4\a\0=\4\b\3=\3\t\2B\0\2\1K\0\1\0\15cursorword\ahl\1\0\1\14underline\2\1\0\3\15min_length\3\3\venable\2\ahl\0\15cursorline\1\0\2\15cursorword\0\15cursorline\0\1\0\3\ftimeout\3»\1\venable\2\vnumber\2\nsetup\20nvim-cursorline\frequire\0" },
+    config = { "\27LJ\2\n’\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0005\4\a\0=\4\b\3=\3\t\2B\0\2\1K\0\1\0\15cursorword\ahl\1\0\1\14underline\2\1\0\3\15min_length\3\3\ahl\0\venable\2\15cursorline\1\0\2\15cursorline\0\15cursorword\0\1\0\3\vnumber\2\ftimeout\3»\1\venable\2\nsetup\20nvim-cursorline\frequire\0" },
     loaded = true,
     path = "/Users/tomraaff/.local/share/nvim/site/pack/packer/start/nvim-cursorline",
     url = "https://github.com/yamatsum/nvim-cursorline"
@@ -259,14 +264,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim-cursorline
+time([[Config for nvim-cursorline]], true)
+try_loadstring("\27LJ\2\n’\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0005\4\a\0=\4\b\3=\3\t\2B\0\2\1K\0\1\0\15cursorword\ahl\1\0\1\14underline\2\1\0\3\15min_length\3\3\ahl\0\venable\2\15cursorline\1\0\2\15cursorline\0\15cursorword\0\1\0\3\vnumber\2\ftimeout\3»\1\venable\2\nsetup\20nvim-cursorline\frequire\0", "config", "nvim-cursorline")
+time([[Config for nvim-cursorline]], false)
 -- Config for: auto-save.nvim
 time([[Config for auto-save.nvim]], true)
 try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14auto-save\frequire\0", "config", "auto-save.nvim")
 time([[Config for auto-save.nvim]], false)
--- Config for: nvim-cursorline
-time([[Config for nvim-cursorline]], true)
-try_loadstring("\27LJ\2\n’\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0005\4\a\0=\4\b\3=\3\t\2B\0\2\1K\0\1\0\15cursorword\ahl\1\0\1\14underline\2\1\0\3\15min_length\3\3\venable\2\ahl\0\15cursorline\1\0\2\15cursorword\0\15cursorline\0\1\0\3\ftimeout\3»\1\venable\2\vnumber\2\nsetup\20nvim-cursorline\frequire\0", "config", "nvim-cursorline")
-time([[Config for nvim-cursorline]], false)
 -- Config for: sunglasses.nvim
 time([[Config for sunglasses.nvim]], true)
 try_loadstring("\27LJ\2\ng\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\2\16filter_type\nSHADE\19filter_percent\4\0ÄÄ¿˛\3\nsetup\15sunglasses\frequire\0", "config", "sunglasses.nvim")
