@@ -28,6 +28,8 @@ vim.opt.colorcolumn="100"
 vim.opt.textwidth=100
 vim.opt.syntax="on"
 
+vim.opt.whichwrap="b,s,<,>,h,l,[,]"
+
 vim.api.nvim_create_autocmd("TextYankPost", {
     desc = "Highlight when yanking text",
     group = vim.api.nvim_create_augroup("highlight-yank", { clear = true }),
