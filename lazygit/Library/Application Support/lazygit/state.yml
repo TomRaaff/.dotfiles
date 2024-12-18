@@ -1,6 +1,7 @@
 lastupdatecheck: 0
 recentrepos:
     - /Users/dsm/.dotfiles
+    - /Users/dsm/Workspace/dbtl-local/dbtl-frontend
     - /Users/tomraaff/.dotfiles
     - /Users/tomraaff/Workspace/date-night
 startuppopupversion: 5
