@@ -62,6 +62,7 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'},
 	  }
   }
+
   -- Markdown support
   use({
       'MeanderingProgrammer/render-markdown.nvim',
@@ -73,6 +74,14 @@ return require('packer').startup(function(use)
           require('render-markdown').setup({})
       end,
   })
+
+  -- Window management
+  --------------------
+  -- Splits management
+  use('mrjones2014/smart-splits.nvim')
+  use {"shortcuts/no-neck-pain.nvim", tag = "*" }
+  -- Tmux bindings
+  -- use('christoomey/vim-tmux-navigator')
 
   -- File system
   use {
@@ -95,13 +104,6 @@ return require('packer').startup(function(use)
     end
   }
 
-  -- Window management
-  --------------------
-  -- Splits management
-  use('mrjones2014/smart-splits.nvim')
-  -- Tmux bindings
-  -- use('christoomey/vim-tmux-navigator')
- 
   -- Visuals
   ----------
   -- Theme
