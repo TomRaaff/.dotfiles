@@ -111,6 +111,8 @@ return require('packer').startup(function(use)
 
   -- Statusbar 
   use('nvim-lualine/lualine.nvim')
+  -- Put cmd inside a popup
+  use { "smilhey/ed-cmd.nvim" }
 
   -- Smoothscrolling
   use('karb94/neoscroll.nvim')
