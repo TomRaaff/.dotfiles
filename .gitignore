@@ -1,1 +1,5 @@
 .DS_Store
+
+./lazygit/Library/Application Support/lazygit/state.yml
+
+./karabiner/.config/karabiner/automatic_backups/
