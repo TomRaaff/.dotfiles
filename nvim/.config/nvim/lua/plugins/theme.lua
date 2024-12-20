@@ -1,17 +1,61 @@
-return { -- You can easily change to a different colorscheme.
-	-- Change the name of the colorscheme plugin below, and then
-	-- change the command in the config to whatever the name of that colorscheme is.
-	--
-	-- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
-	"folke/tokyonight.nvim",
-	priority = 1000, -- Make sure to load this before all the other start plugins.
+return {
+	"catppuccin/nvim",
+	name = "catppuccin",
+	priority = 1000,
 	init = function()
-		-- Load the colorscheme here.
-		-- Like many other themes, this one has different styles, and you could load
-		-- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-		vim.cmd.colorscheme("tokyonight-night")
+		require("catppuccin").setup({
+			flavour = "macchiato", -- latte, frappe, macchiato, mocha
+			background = {
+				light = "latte",
+				dark = "macchiato",
+			},
+			transparent_background = false, -- disables setting the background color.
+			show_end_of_buffer = false, -- shows the '~' characters after the end of buffers
+			term_colors = false, -- sets terminal colors (e.g. `g:terminal_color_0`)
+			dim_inactive = {
+				enabled = true, -- dims the background color of inactive window
+				shade = "dark",
+				percentage = 0.20, -- percentage of the shade to apply to the inactive window
+			},
+			integrations = {
+				cmp = true,
+				gitsigns = true,
+				treesitter = true,
+				mini = {
+					enabled = true,
+					indentscope_color = "",
+				},
+				harpoon = true,
+				mason = true,
+				neotree = true,
+				dap = true,
+				dap_ui = true,
+				nvim_surround = true,
+				telescope = {
+					enabled = true,
+				},
+				which_key = true,
+				-- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
+			},
+		})
 
-		-- You can configure highlights by doing something like:
-		vim.cmd.hi("Comment gui=none")
+		-- setup must be called before loading
+		vim.cmd.colorscheme("catppuccin")
 	end,
 }
+
+-- NOTE: tokyonight
+--
+-- return {
+-- 	"folke/tokyonight.nvim",
+-- 	priority = 1000,
+-- 	init = function()
+-- 		-- Load the colorscheme here.
+-- 		-- Like many other themes, this one has different styles, and you could load
+-- 		-- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
+-- 		vim.cmd.colorscheme("tokyonight-night")
+--
+-- 		-- You can configure highlights by doing something like:
+-- 		vim.cmd.hi("Comment gui=none")
+-- 	end,
+-- }
