@@ -12,7 +12,6 @@ return { -- Highlight, edit, and navigate code
 			"lua",
 			"luadoc",
 			"markdown",
-			"markdownlint",
 			"markdown_inline",
 			"vim",
 			"vimdoc",

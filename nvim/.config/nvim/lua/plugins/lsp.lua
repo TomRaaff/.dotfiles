@@ -18,7 +18,20 @@ return {
 		dependencies = {
 			-- Automatically install LSPs and related tools to stdpath for Neovim
 			{ "williamboman/mason.nvim", config = true }, -- NOTE: Must be loaded before dependants
-			"williamboman/mason-lspconfig.nvim",
+			{
+				"williamboman/mason-lspconfig.nvim",
+				ensure_installed = {
+					"css_variables",
+					"cssls",
+					"cssmodules_ls",
+					"custom_elements_ls",
+					"eslint",
+					"html",
+					"jsonls",
+					"tailwindcss",
+					"ts_ls",
+				},
+			},
 			"WhoIsSethDaniel/mason-tool-installer.nvim",
 
 			-- Useful status updates for LSP.
