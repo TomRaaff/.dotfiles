@@ -5,6 +5,7 @@ return {
 			options = {
 				icons_enabled = true,
 				theme = "catppuccin",
+				section_separators = { left = "", right = "" },
 			},
 			sections = {
 				lualine_a = { { "filename", path = 1 } },
@@ -12,7 +13,7 @@ return {
 				lualine_c = {},
 				lualine_x = { "location" },
 				lualine_y = {},
-				lualine_z = {},
+				lualine_z = { "mode" },
 			},
 		})
 	end,

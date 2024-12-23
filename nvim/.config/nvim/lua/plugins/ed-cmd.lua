@@ -1,3 +1,6 @@
+-- Set the height of the command line to 0
+vim.o.cmdheight = 0
+
 return {
 	"smilhey/ed-cmd.nvim",
 	config = function()

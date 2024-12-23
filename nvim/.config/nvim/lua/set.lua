@@ -63,6 +63,3 @@ vim.opt.whichwrap = "b,s,<,>,h,l,[,]"
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 20
-
--- Set the height of the command line to 0
-vim.o.cmdheight = 0

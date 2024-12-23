@@ -17,7 +17,7 @@ return {
 		"neovim/nvim-lspconfig",
 		dependencies = {
 			-- Automatically install LSPs and related tools to stdpath for Neovim
-			{ "williamboman/mason.nvim", config = true }, -- NOTE: Must be loaded before dependants
+			{ "williamboman/mason.nvim", config = true },
 			{
 				"williamboman/mason-lspconfig.nvim",
 				ensure_installed = {
@@ -38,7 +38,6 @@ return {
 			-- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
 			{ "j-hui/fidget.nvim", opts = {} },
 
-			-- Allows extra capabilities provided by nvim-cmp
 			"hrsh7th/cmp-nvim-lsp",
 		},
 		config = function()
@@ -125,14 +124,14 @@ return {
 			})
 
 			-- Change diagnostic symbols in the sign column (gutter)
-			-- if vim.g.have_nerd_font then
-			--   local signs = { ERROR = '', WARN = '', INFO = '', HINT = '' }
-			--   local diagnostic_signs = {}
-			--   for type, icon in pairs(signs) do
-			--     diagnostic_signs[vim.diagnostic.severity[type]] = icon
-			--   end
-			--   vim.diagnostic.config { signs = { text = diagnostic_signs } }
-			-- end
+			if vim.g.have_nerd_font then
+				local signs = { ERROR = "", WARN = "", INFO = "", HINT = "" }
+				local diagnostic_signs = {}
+				for type, icon in pairs(signs) do
+					diagnostic_signs[vim.diagnostic.severity[type]] = icon
+				end
+				vim.diagnostic.config({ signs = { text = diagnostic_signs } })
+			end
 
 			-- LSP servers and clients are able to communicate to each other what features they support.
 			--  By default, Neovim doesn't support everything that is in the LSP specification.
@@ -161,8 +160,13 @@ return {
 				--    https://github.com/pmizio/typescript-tools.nvim
 				--
 				-- But for many setups, the LSP (`ts_ls`) will work just fine
-				-- ts_ls = {},
-				--
+				ts_ls = {},
+				cssls = {},
+				css_variables = {},
+				cssmodules_ls = {},
+				html = {},
+				jsonls = {},
+				eslint = {},
 
 				lua_ls = {
 					-- cmd = { ... },
@@ -174,7 +178,7 @@ return {
 								callSnippet = "Replace",
 							},
 							-- You can toggle below to ignore Lua_LS's noisy `missing-fields` warnings
-							-- diagnostics = { disable = { 'missing-fields' } },
+							diagnostics = { disable = { "missing-fields" } },
 						},
 					},
 				},
