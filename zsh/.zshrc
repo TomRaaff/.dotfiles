@@ -39,7 +39,6 @@ plugins=(
   nvm
   macos
   sdk
-  java
 )
 
 source $ZSH/oh-my-zsh.sh 
@@ -79,6 +78,10 @@ alias gcambla='gcam "bla"'
 function mk() {
     mkdir -p $1 && cd $1
 }
+
+# DSM specific
+# TODO: is this better placed at a zprofile or something?
+export CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --profile dbtl-build --domain sri --domain-owner 260010145830 --region eu-west-1 --query authorizationToken --output text`
 
 # [SDKMAN] This must be at the end of the file for sdkman to work
 export SDKMAN_DIR="$HOME/.sdkman"
