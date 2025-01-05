@@ -6,7 +6,7 @@ return {
 				icons_enabled = true,
 				theme = "catppuccin",
 				section_separators = { left = "", right = "" },
-				disabled_filetypes = { "neo-tree", "[No Name]" },
+				disabled_filetypes = { "neo-tree", "no-neck-pain-left", "no-neck-pain-right" },
 			},
 			sections = {
 				lualine_a = { { "filename", path = 1 } },
