@@ -62,6 +62,7 @@ alias file='find . | grep -i'
 alias ip='ip4 && echo " " && ip6'
 alias ip4='ipconfig getifaddr en0'
 alias ip6='curl ifconfig.me'
+alias getIps='arp -a'
 # [git]
 alias lg="lazygit"
 alias gpf="git push --force-with-lease"
