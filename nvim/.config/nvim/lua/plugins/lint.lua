@@ -6,7 +6,8 @@ return {
 		config = function()
 			local lint = require("lint")
 			lint.linters_by_ft = {
-				markdown = { "markdownlint" },
+				typescript = { "eslint_d" },
+				javascript = { "eslint_d" },
 			}
 
 			-- To allow other plugins to add linters to require('lint').linters_by_ft,
@@ -35,7 +36,7 @@ return {
 			-- lint.linters_by_ft['inko'] = nil
 			-- lint.linters_by_ft['janet'] = nil
 			-- lint.linters_by_ft['json'] = nil
-			-- lint.linters_by_ft['markdown'] = nil
+			lint.linters_by_ft["markdown"] = nil
 			-- lint.linters_by_ft['rst'] = nil
 			-- lint.linters_by_ft['ruby'] = nil
 			-- lint.linters_by_ft['terraform'] = nil
