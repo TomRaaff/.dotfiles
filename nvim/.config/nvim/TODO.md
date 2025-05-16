@@ -16,5 +16,3 @@
   - zsh git aliases
   - running npm scripts etc.
 - figure out how the undo-tree plugin does
-- learn how to properly work with the quickfix list
-- learn harpoon workflow

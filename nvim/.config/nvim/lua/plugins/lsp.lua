@@ -26,6 +26,7 @@ return {
 					"cssmodules_ls",
 					"custom_elements_ls",
 					"eslint",
+					"eslint_d",
 					"html",
 					"jsonls",
 					"tailwindcss",

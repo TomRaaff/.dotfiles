@@ -163,6 +163,10 @@ return {
 							local cwd = vim.loop.cwd()
 							local configs = {
 								{
+									project = "~/Workspace/dbtl-local/dbtl-frontend",
+									config = "~/Workspace/dbtl-local/dbtl-frontend/playwright.config.ts",
+								},
+								{
 									project = "/open-source/playwright-ct-optimizer",
 									config = "/ct-solid/playwright.config.ts",
 								},

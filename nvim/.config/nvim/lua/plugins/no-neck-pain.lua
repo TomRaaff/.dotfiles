@@ -8,7 +8,7 @@ return {
 	init = function()
 		local state = {}
 		local config = {
-			width = 168,
+			width = 180,
 			integrations = {
 				trouble = { position = "bottom", fileType = "trouble" },
 				fugitive = { position = "top", fileType = "fugitive" },
