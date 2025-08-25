@@ -239,6 +239,7 @@
                     },
                     {
                         "description": "Change right_command to hyper key",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
@@ -355,6 +356,7 @@
                     },
                     {
                         "description": "LCtrl + LCmnd to NumPad",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
