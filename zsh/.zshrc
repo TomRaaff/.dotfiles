@@ -53,8 +53,7 @@ alias root='cd /'
 alias home='cd ~'
 alias desk='cd ~/desktop'
 alias workspace='cd ~/Workspace/'
-alias frontend='cd ~/Workspace/dbtl-local/dbtl-frontend/'
-alias strainstudio='cd ~/Workspace/dbtl-local/strainstudio/'
+alias frontend='cd ~/Workspace/devops-docker/frontend/'
 alias config='cd ~/.dotfiles/ && nvim .'
 alias nvimconfig='cd ~/.dotfiles/nvim/.config/nvim/ && nvim .'
 alias nvimdocs='cd ~/.dotfiles/nvim/.config/nvim/ && nvim vim-notes.md'
@@ -64,6 +63,8 @@ alias ip='ip4 && echo " " && ip6'
 alias ip4='ipconfig getifaddr en0'
 alias ip6='curl ifconfig.me'
 alias getIps='arp -a'
+# [projects]
+alias start-frontend='sh ~/Workspace/scripts/projects/frontend.sh'
 # [git]
 alias lg="lazygit"
 alias gpf="git push --force-with-lease"
